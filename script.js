@@ -4,8 +4,20 @@
 var CustomerNumber = 123456;
 // min 100000
 // max 999999
-var isCardNumberGreaterThan100000 = CustomerNumber >= 100000;
-var isCardNumberLowerThan999999 = CustomerNumber <= 999999;
+var isCardNumberGreaterThan100000 = (CustomerNumber >= 100000);
+var isCardNumberLowerThan999999 = (CustomerNumber <= 999999);
 
-isCustomerNumber6Digit = isCardNumberGreaterThan100000 && isCardNumberLowerThan999999;
+isCustomerNumber6Digit = isCardNumberGreaterThan100000
+                         && 
+                         isCardNumberLowerThan999999;
 
+// optimised code version
+var isCustomerNormal =  (CustomerNumber >= 100000) 
+                        && 
+                        (CustomerNumber <= 999999);
+
+var isCustomerEarlyAdopter =    (CustomerNumber > 99)
+                                &&
+                                (CustomerNumber < 1000000);
+
+var isCustomerLagger = CustomerNumber > 999999;
