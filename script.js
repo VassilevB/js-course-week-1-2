@@ -28,3 +28,15 @@ var isCustomerEarlyAdopter =    (CustomerNumber > EARLY_ADOPTER_COEFFICIENT)
 
 var isCustomerLagger = CustomerNumber > LAGGER_USER_COEFFICIENT;
 
+if (isCustomerNormal) {
+    return console.log(`Потребителят е нормален.`);
+}
+
+if (isCustomerEarlyAdopter) {
+    return console.log(`Потребителят е ърли адоптър.`);
+}
+
+if (isCustomerLagger) {
+    return console.log(`Потребителят е от бавните.`);
+}
+
